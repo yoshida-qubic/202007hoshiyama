@@ -6,16 +6,18 @@
 /* @media screen and (min-width:769px) and ( max-width:1025px) {} */
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ベース設定 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 html{
-	color: ;
-	font-size:;
+	color: #242424;
+	font-size: 16px;
 	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
 	/*font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;*/
-	line-height: ;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+	line-height: 1.8;
 }
 a{
-	color: ;
+	color: #242424;
 	display: block;
 }
 #wrapper{
@@ -23,18 +25,27 @@ a{
 	max-width: 1920px;
 	margin: 0 auto;
 	height: auto;
+	overflow: hidden;
+	margin-top: 90px;
 }
 section,
 .section{
+	min-width: 1280px;
 	width: 100%;
 	height: auto;
 	position: relative;
 }
 .container{
-	width: 90%;
+	width: 1280px;
+	padding: 0 50px;
 	margin: 0 auto;
 }
-@media screen and (min-width:1540px) {
+.s_container{
+	width: 980px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+/* @media screen and (min-width:1540px) {
 	.container{max-width: 1480px;}
 }
 @media screen and (min-width:1280px) and ( max-width:1539px) {
@@ -42,7 +53,7 @@ section,
 }
 @media screen and (min-width:768px) and ( max-width:1279px) {
 	.container{max-width: none;}
-}
+} */
 .is_sp{display: none;}
 .is_tab{display: none;}
 @media screen and (min-width:751px) and ( max-width:1025px) {
@@ -75,16 +86,66 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.notoserif{
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 700;
+}
+.lato{
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	z-index: 55000;
+	transition: .3s;
+}
+header .logo{
+	width: 250px;
+	margin-left: 2rem;
+	line-height: 0;
+}
+header nav{
+	margin-left: auto;
+}
+header nav ul{
+	display: flex;
+}
+header nav li a{
+	padding: 1.75rem;
+}
+header .h_btn{
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+header .h_btn.tel{ background: #454545; }
+header .h_btn.mail{ background: #1f649e; }
+header .h_btn img{
+	width: 50%;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01 .mv img{
+	width: 100%;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
