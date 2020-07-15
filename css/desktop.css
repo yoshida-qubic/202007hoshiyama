@@ -61,7 +61,7 @@ section,
 	.is_tab{display: block;}
 } 
 :root{
-	--colorname: ;
+	--blue: #1f649e;
 }
 .objectCover {
 	width:100%;
@@ -102,11 +102,18 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
-	display: flex;
-	align-items: center;
-	background: #fff;
 	z-index: 55000;
 	transition: .3s;
+	background: rgba(255,255,255,.9);
+}
+.header_in{
+	width: 100%;
+	max-width: 1920px;
+	min-width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 }
 header .logo{
 	width: 250px;
@@ -116,12 +123,42 @@ header .logo{
 header nav{
 	margin-left: auto;
 }
-header nav ul{
+header nav .menu{
 	display: flex;
 }
-header nav li a{
-	padding: 1.75rem;
+header nav .menu li a{
+	position: relative;
+	padding: 1.95rem 1.75rem;
+	transition: .3s;
 }
+header nav .menu li a::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: var(--blue);
+	width: 0;
+	height: 100%;
+	z-index: -1;
+	transition: .3s;
+}
+header nav .menu li a:hover{
+	color: #fff;
+}
+header nav .menu li a:hover::before{
+	width: 100%;
+	/* background: var(--blue); */
+}
+header nav .menu li a span{
+	margin-left: 0.5rem;
+}
+header .menu_in{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 header .h_btn{
 	width: 90px;
 	height: 90px;
@@ -142,8 +179,28 @@ header .h_btn img{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01 .mv{
+	position: relative;
+}
 .top01 .mv img{
 	width: 100%;
+}
+.top01 .mv .copy{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	color: #fefefe;
+	text-align: center;
+	z-index: 2;
+}
+.top01 .mv .copy h2{
+	font-size: 3.75rem;
+	letter-spacing: 0.4rem;
+}
+.top01 .mv .copy p{
+	letter-spacing: 0.1rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
