@@ -18,8 +18,15 @@ const tabletwidth = 1025;
 
 $(function () {
 
-// JQueryの範囲
-
+	// JQueryの範囲
+	$('header .menu01').hover(
+		function(){
+			$('header .menu01_in').show();
+		},
+		function(){
+			$('header .menu01_in').hide();
+		}
+	);
 
 
 

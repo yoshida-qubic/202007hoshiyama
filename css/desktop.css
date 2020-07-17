@@ -126,12 +126,12 @@ header nav{
 header nav .menu{
 	display: flex;
 }
-header nav .menu li a{
+header nav .menu > li a{
 	position: relative;
 	padding: 1.95rem 1.75rem;
 	transition: .3s;
 }
-header nav .menu li a::before{
+header nav .menu > li a::before{
 	position: absolute;
 	content: '';
 	top: 50%;
@@ -143,20 +143,61 @@ header nav .menu li a::before{
 	z-index: -1;
 	transition: .3s;
 }
-header nav .menu li a:hover{
+header nav .menu > li a:hover{
 	color: #fff;
 }
-header nav .menu li a:hover::before{
+header nav .menu > li a:hover::before{
 	width: 100%;
 	/* background: var(--blue); */
 }
-header nav .menu li a span{
+header nav .menu > li a span{
 	margin-left: 0.5rem;
 }
-header .menu_in{
+header .menu01{
+	position: relative;
+}
+header .menu01_in{
+	display: none;
 	position: absolute;
-	top: 0;
+	top: 90.38px;
 	left: 0;
+	width: 300px;
+	background: #fff;
+	padding: 0.5rem;
+	transition: .3s;
+}
+header .menu01_in.active{
+	display: block;
+	position: absolute;
+	top: 90.38px;
+	left: 0;
+	width: 300px;
+	background: #fff;
+	padding: 0.5rem;
+	transition: .3s;
+}
+header .menu01_in li a{
+	background: #fff;
+	padding: 0.75rem 0.5rem!important;
+	border-bottom: solid 2px #e8e8e8;
+}
+header .menu01_in li a::before{
+	/* position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: var(--blue);
+	width: 0;
+	height: 100%;
+	z-index: -1;
+	transition: .3s; */
+}
+header nav .menu01_in li a:hover{
+	/* color: #fff; */
+}
+header nav .menu01_in li a:hover::before{
+	/* width: 100%; */
 }
 
 header .h_btn{
@@ -203,6 +244,25 @@ header .h_btn img{
 	letter-spacing: 0.1rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top02{
+	padding: 4rem 0;
+}
+.top02 .box{
+	display: flex;
+	justify-content: space-between;
+}
+.top02 .box .txt{
+	width: 52%;
+}
+.top02 .box .img{
+	width: 45%;
+}
+.top02 .box .img img{
+	width: 100%;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
