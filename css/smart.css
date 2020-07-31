@@ -324,17 +324,35 @@ footer .address .box .copyright{
 .top01{
 	padding: 0 0 2rem;
 }
+.top01 .mv{
+	position: relative;
+}
+.top01 .mv_in .img{
+	width: 100%;
+	height: 25vh;
+	min-height: 200px;
+}
 .top01 .mv img{ width: 100%; }
 .top01 .mv .copy{
-	margin-top: 1rem;
 	text-align: center;
-	padding: 0 2rem;
+	position: absolute;
+	top: 5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	z-index: 3;
 }
 .top01 .mv .copy h2{
+	color: #fefefe;
 	font-size: 2rem;
 	line-height: 1.4;
 	letter-spacing: 2px;
 	margin-bottom: 1rem;
+}
+.top01 .mv p{
+	margin-top: 1.5rem;
+	padding: 0 2rem;
+	text-align: center;
 }
 footer nav ul{
 	margin-bottom: 1rem;
@@ -452,6 +470,14 @@ footer nav .menu01 li a{
 .top05 .swiper-slide-prev,
 .top05 .swiper-slide-next{
 	opacity: 0.4;
+}
+.swiper-button-next, .swiper-button-prev{
+	margin-top: -40px!important;
+	border-top: solid 12px #242424;
+	border-left: solid 7.5px #242424;
+	border-right: solid 7.5px #242424;
+	border-bottom: solid 10px #242424;
+	transform: translateY(-50%);
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 

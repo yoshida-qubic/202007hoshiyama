@@ -61,10 +61,10 @@
 	
 				<a class="h_btn tel is_pc">
 					<span><img src="./images/common/header_tel.png" alt="電話"></span>
+					<div class="tel_in is_pc">
+						<p class="lato">075-314-6341</p>
+					</div>
 				</a>
-				<div class="tel_in is_pc">
-					<p class="lato">075-314-6341</p>
-				</div>
 				<a href="#" class="h_btn mail is_pc">
 					<span><img src="./images/common/header_mail.png" alt="メール"></span>
 				</a>
@@ -80,17 +80,51 @@
 
 			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
 			<section class="top01">
-				<div class="mv">
-					<img src="./images/top/mv.jpg">
+				<div class="mv swiper-container">
+					<div class="mv_in swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="img">
+								<img class="objectCover" src="./images/top/mv.jpg">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="img">
+								<img class="objectCover" src="./images/top/top03_01.jpg">
+							</div>
+						</div>
+					</div>
 					<div class="copy">
 						<h2 class="lato">Total Construction <br class="is_sp">HOSHIYAMA</h2>
-						<p>
-							星山建設は、京都の土木工事業を主体とし、<br class="is_sp">多くの公共事業に貢献しています。<br>
-							生コンクリートの製造・販売は、<br class="is_sp">地域No.１の実績を誇っております。
+						<p class="is_pc">
+							星山建設は、京都の土木工事業を主体とし、多くの公共事業に貢献しています。<br>
+							生コンクリートの製造・販売は、地域No.１の実績を誇っております。
 						</p>
 					</div>
+					<p class="is_sp">
+						星山建設は、京都の土木工事業を主体とし、<br>多くの公共事業に貢献しています。<br>
+						生コンクリートの製造・販売は、<br>地域No.１の実績を誇っております。
+					</p>
 				</div>
 			</section>
+			<script>
+				window.addEventListener('DOMContentLoaded', function () {
+					var swiper = new Swiper('.top01 .swiper-container', {
+						direction: 'horizontal',
+						loop: true,
+						speed: 2000,
+						effect: 'fade',
+						autoplay: {
+							delay: 4000,
+							disableOnInteraction: false
+						},
+						// queueEndCallbacks: true,
+						// navigation: {
+						// 	nextEl: '.swiper-button-next',
+						// 	prevEl: '.swiper-button-prev',
+						// },
+					});
+				}, false);
+			</script>
 			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
 
 			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
@@ -402,7 +436,6 @@
 								<span>施工事例</span>
 								<ul>
 									<li><a href="#">土木工事</a></li>
-									<li><a href="#">SPEED工法</a></li>
 									<li><a href="#">サイネージ</a></li>
 								</ul>
 							</li>

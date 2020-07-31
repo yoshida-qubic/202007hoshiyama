@@ -31,10 +31,10 @@ $(function () {
 
 		$('header .h_btn.tel').hover(
 			function(){
-				$(this).next('.tel_in').fadeIn(300);
+				$(this).children('.tel_in').fadeIn(300);
 			},
 			function(){
-				$(this).next('.tel_in').fadeOut(300);
+				$(this).children('.tel_in').fadeOut(300);
 			}
 		);
 	}
