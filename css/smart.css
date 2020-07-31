@@ -133,7 +133,7 @@ header{
 	transition: .3s;
 }
 header.active{
-	background: rgba(254,254,254,.9);
+	background: rgba(254,254,254,.95);
 }
 .header_in{
 	width: 100%;
@@ -155,7 +155,7 @@ header nav{
 	right: -100%;
 	width: 100%;
 	height: calc(100vh - 50.31px);
-	background: rgba(254, 254, 254, 0.9);
+	background: rgba(254, 254, 254, 0.95);
 	z-index: 55000;
 	transition: .3s;
 	padding: 0 0 3rem;
@@ -166,7 +166,6 @@ header nav.active{
 header nav li a{
 	font-size: 1.1rem;
 	font-weight: bold;
-	background: #fefefe;
 	padding: 0.75rem 1.5rem;
 	border-bottom: solid 1px #ccc;
 }

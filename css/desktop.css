@@ -166,7 +166,7 @@ header{
 	transition: .3s;
 }
 header.active{
-	background: rgba(254,254,254,.9);
+	background: rgba(254,254,254,.95);
 }
 .header_in{
 	width: 100%;
