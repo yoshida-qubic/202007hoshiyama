@@ -19,16 +19,32 @@ const tabletwidth = 1025;
 $(function () {
 
 	// JQueryの範囲
-	$('header .menu01').hover(
-		function(){
-			$('header .menu01_in').show();
-		},
-		function(){
-			$('header .menu01_in').hide();
-		}
-	);
+	if(w > spwidth){
+		$('header .menu01').hover(
+			function(){
+				$('header .menu01_in').slideDown(300);
+			},
+			function(){
+				$('header .menu01_in').slideUp(300);
+			}
+		);
 
+		$('header .h_btn.tel').hover(
+			function(){
+				$(this).next('.tel_in').fadeIn(300);
+			},
+			function(){
+				$(this).next('.tel_in').fadeOut(300);
+			}
+		);
+	}
 
+});
 
-
+$(window).scroll(function () {
+	if ($(window).scrollTop() > 500) {
+		$('header').addClass('active');
+	} else {
+		$('header').removeClass('active');
+	}
 });

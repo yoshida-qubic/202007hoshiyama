@@ -3,7 +3,7 @@
 body{-webkit-text-size-adjust: 100%;}
 html{
 	color: #242424;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 1.8;
 	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
@@ -11,14 +11,17 @@ html{
 	/*font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;*/
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 500;
+	letter-spacing: 1px;
 	-webkit-text-size-adjust: 100%;
 }
 a{
 	color: #242424;
+	display: block;
 }
 #wrapper{
 	width: 100%;
 	height: 100%;
+	margin-top: 50.31px;
 }
 section,
 .section{
@@ -26,14 +29,18 @@ section,
 	height: auto;
 	position: relative;
 }
-.container{
+.container,
+.s_container{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
 	padding:0 2rem;
 }
-.is_pc{display: none;}
-.is_hidden_tab{display: none;}
+.is_pc{display: none!important;}
+.is_hidden_tab{display: none!important;}
+:root{
+	--blue: #1f649e;
+}
 .objectCover {
 	width:100%;
 	height: 100%;
@@ -60,10 +67,153 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.notoserif{
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 700;
+}
+.lato{
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+.head_ttl{
+	font-size: 2.5rem;
+	line-height: 1;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.ttl_wrap{
+	position: relative;
+	margin-bottom: 0.5rem;
+}
+.ttl_wrap .num{
+	position: absolute;
+	content: '';
+	top: -4.4rem;
+	left: 0;
+	color: rgba(36,36,36,.1);
+	font-size: 3.5rem;
+	font-style: italic;
+}
+.ttl_wrap .ttl{
+	font-size: 1.4rem;
+	line-height: 1.4;
+}
+.ttl_wrap .en{
+	font-size: 1rem;
+}
+.more_links{
+	display: flex;
+	margin-top: 2.5rem;
+}
+.more{
+	position: relative;
+	display: inline-block;
+	margin-left: auto;
+}
+.more p{
+	line-height: 1;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.more span{
+	font-size: 1.3rem;
+	margin-left: 0.25rem;
+	vertical-align: -0.15rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 55000;
+	transition: .3s;
+}
+header.active{
+	background: rgba(254,254,254,.9);
+}
+.header_in{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+header .logo{
+	max-width: 200px;
+	width: 80%;
+	margin-left: 2rem;
+	line-height: 0;
+}
+header nav{
+	position: absolute;
+	top: 100%;
+	right: -100%;
+	width: 100%;
+	height: calc(100vh - 50.31px);
+	background: rgba(254, 254, 254, 0.9);
+	z-index: 55000;
+	transition: .3s;
+	padding: 0 0 3rem;
+}
+header nav.active{
+	right: 0;
+}
+header nav li a{
+	font-size: 1.1rem;
+	font-weight: bold;
+	background: #fefefe;
+	padding: 0.75rem 1.5rem;
+	border-bottom: solid 1px #ccc;
+}
+header nav li.first a{
+	border-top: solid 1px #ccc;
+}
+header nav li.menu01 a{
+	border-bottom: none;
+	padding-bottom: 0.5rem;
+}
+header nav li.menu01 > a::before{
+	content: '−';
+	margin-right: 0.25rem;
+}
+header nav .menu01 .menu01_in li a{
+	font-size: 1rem;
+	font-weight: normal;
+	padding: 0.3rem 0.75rem 0.3rem 2.75rem;
+}
+header nav .menu01 .menu01_in li:nth-of-type(-n+2) a{
+	border-bottom: none;
+}
+header nav .menu01 .menu01_in li:nth-of-type(3) a{
+	padding-bottom: 0.75rem;
+	border-bottom: solid 1px #ccc;
+}
+header .btn_wrap{
+	display: flex;
+}
+header .h_btn{
+	width: 50%;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .3s;
+}
+header .h_btn.tel{ background: #454545; }
+header .h_btn.mail{ background: #1f649e; }
+header .h_btn span{
+	display: block;
+}
+header .h_btn img{
+	width: 50%;
+}
+
 .menu_open{
 	width: 3rem;
 	position: relative;
@@ -72,7 +222,7 @@ section,
 	position: absolute;
 	top:50%;
 	left:50%;
-	background: #fff;
+	background: var(--blue);
 	width: 40%;
 	height: 2px;
 	transition: .3s;
@@ -86,8 +236,239 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+footer .contact{
+	color: #fefefe;
+	padding: 3rem 0;
+	background: url(../images/common/footer_bg.jpg) center center / cover no-repeat;
+}
+footer .contact .copy{
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+footer .box_in{
+	text-align: center;
+}
+footer .contact .box_in p,
+footer .contact .box_in a{
+	color: #fefefe;
+	line-height: 1;
+}
+footer .contact .tel_wrap{
+	margin-bottom: 3rem;
+}
+footer .contact .tel{
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+}
+footer .contact_btn a{
+	position: relative;
+	color: #fefefe;
+	background: var(--blue);
+	font-size: 1.3rem;
+	line-height: 1;
+	padding: 1.25rem 1rem 1.25rem 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer .contact_btn a .img{
+	width: 30px;
+}
+footer .contact_btn a span{
+	font-size: 1.5rem;
+}
+footer .map iframe{
+	width: 100%;
+	height: 280px;
+}
+footer .map iframe,
+footer .map object,
+footer .map embed{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+footer .footer_nav{
+	color: #fefefe;
+	background: #454545;
+	padding: 2.5rem 0;
+}
+footer .address{
+	background: #fefefe;
+	padding: 1.5rem 0 1rem;
+}
+footer .address .logo{
+	width: 200px;
+	margin: 0 auto 1rem;
+}
+footer .address .box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer .address .box p{
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+}
+footer .address .box .copyright{
+	text-align: center;
+	margin-top: 2rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01{
+	padding: 0 0 2rem;
+}
+.top01 .mv img{ width: 100%; }
+.top01 .mv .copy{
+	margin-top: 1rem;
+	text-align: center;
+	padding: 0 2rem;
+}
+.top01 .mv .copy h2{
+	font-size: 2rem;
+	line-height: 1.4;
+	letter-spacing: 2px;
+	margin-bottom: 1rem;
+}
+footer nav ul{
+	margin-bottom: 1rem;
+}
+footer nav li a{
+	font-size: 0.9rem;
+	line-height: 2;
+	color: #fefefe;
+	padding-left: 1.75rem;
+}
+footer nav li span{
+	display: block;
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+footer nav li span::before{
+	content: '−';
+	margin-right: 0.5rem;
+}
+footer nav .menu01 li a{
+	padding-left: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top02{
+	padding: 2rem 0;
+}
+.top02::before{
+	position: absolute;
+	content: '';
+	background: url(../images/top/top02_bg.png) top left / contain no-repeat;
+	top: -3rem;
+	left: 0;
+	width: 14rem;
+	height: 14rem;
+}
+.top02 .box .txt{
+	margin-bottom: 1rem;
+}
+.top02 .box .txt h3{
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+.top02 .box .txt h4{
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+.top02 .box .img{
+	width: 100%;
+}
+.top02 .box .img img{
+	width: 100%;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top03{ padding: 4rem 0; }
+.top03 .item{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4rem;
+}
+.top03 .item:last-of-type{
+	margin-bottom: 0;
+}
+.top03 .item .img,
+.top03 .item .img img{
+	width: 100%;
+}
+.top03 .txt{
+	margin: 0.5rem auto 1rem;
+}
+.top03 .item h4{
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top04{
+	padding: 3rem 0 0;
+	background: url(../images/top/top04_bg.jpg) center center / cover no-repeat;
+}
+.top04 .box .txt{
+	display: flex;
+	flex-direction: column;
+	bottom: 1rem;
+	right: 0;
+	background: #fefefe;
+	padding: 1rem 1.5rem 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.top04 .box .more{
+	margin-top: 1rem;
+}
+.top04 .box02{
+	display: flex;
+	margin-left: -2rem;
+	margin-right: -2rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top05{ padding: 3rem 0; }
+.top05 .item .img{
+	width: 100%;
+	height: 12rem;
+}
+.top05 .item h3{
+	font-size: 1.2rem;
+	margin: 0.5rem 0 0.1rem;
+}
+.top05 .swiper-slide-prev,
+.top05 .swiper-slide-next{
+	opacity: 0.4;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top06{ padding: 3rem 0 4rem; }
+.top06 .item{
+	border-bottom: solid 2px #e8e8e8;
+	padding: 0.75rem;
+}
+.top06 article .date{
+	font-size: 1.2rem;
+}
+.top06 article .ttl{
+	font-size: 1.1rem;
+	font-weight: bold;
+}
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  

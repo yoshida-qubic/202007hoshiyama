@@ -35,13 +35,13 @@
 	
 				<nav id="gnav">
 					<ul class="menu">
-						<li><a href="./">ホーム</a></li>
+						<li class="first"><a href="./">ホーム</a></li>
 						<li class="menu01">
-							<a href="#">事業内容<span><i class="far fa-angle-down"></i></span></a>
+							<a>事業内容<span class="is_pc"><i class="far fa-angle-down"></i></span></a>
 							<ul class="menu01_in">
-								<li><a href="#">生コンクリート事業<span><i class="far fa-angle-right"></i></span></a></li>
-								<li><a href="#">土木工事<span><i class="far fa-angle-right"></i></span></a></li>
-								<li><a href="#">環境工事<span><i class="far fa-angle-right"></i></span></a></li>
+								<li><a href="#">生コンクリート事業<span class="is_pc"><i class="far fa-angle-right"></i></span></a></li>
+								<li><a href="#">土木工事<span class="is_pc"><i class="far fa-angle-right"></i></span></a></li>
+								<li><a href="#">環境工事<span class="is_pc"><i class="far fa-angle-right"></i></span></a></li>
 							</ul>
 						</li>
 						<li><a href="#">品質管理体制</a></li>
@@ -49,14 +49,25 @@
 						<li><a href="#">お知らせ</a></li>
 						<li><a href="#">会社概要</a></li>
 					</ul>
+					<div class="btn_wrap is_sp">
+						<a href="tel:0753146341" class="h_btn tel">
+							<span><img src="./images/common/header_tel.png" alt="電話"></span>
+						</a>
+						<a href="#" class="h_btn mail">
+							<span><img src="./images/common/header_mail.png" alt="メール"></span>
+						</a>
+					</div>
 				</nav>
 	
-				<div class="h_btn tel">
-					<a class="is_pc"><img src="./images/common/header_tel.png" alt="tel"></a>
+				<a class="h_btn tel is_pc">
+					<span><img src="./images/common/header_tel.png" alt="電話"></span>
+				</a>
+				<div class="tel_in">
+					<p class="lato">075-314-6341</p>
 				</div>
-				<div class="h_btn mail">
-					<a class="is_pc"><img src="./images/common/header_mail.png" alt="tel"></a>
-				</div>
+				<a href="#" class="h_btn mail is_pc">
+					<span><img src="./images/common/header_mail.png" alt="メール"></span>
+				</a>
 
 				<div class="menu_open is_sp" id="menu_open">
 					<span></span>
@@ -72,10 +83,10 @@
 				<div class="mv">
 					<img src="./images/top/mv.jpg">
 					<div class="copy">
-						<h2 class="lato">Total Construction HOSHIYAMA</h2>
+						<h2 class="lato">Total Construction <br class="is_sp">HOSHIYAMA</h2>
 						<p>
-							星山建設は、京都の土木工事業を主体とし、多くの公共事業に貢献しています。<br>
-							生コンクリートの製造・販売は、地域No.１の実績を誇っております。
+							星山建設は、京都の土木工事業を主体とし、<br class="is_sp">多くの公共事業に貢献しています。<br>
+							生コンクリートの製造・販売は、<br class="is_sp">地域No.１の実績を誇っております。
 						</p>
 					</div>
 				</div>
@@ -88,12 +99,12 @@
 					<div class="box">
 						<div class="txt">
 							<h3>星山建設は、<br>環境に優しく品質に厳しく</h3>
-							<h4>京都の総合建設会社 土木工事/生コン/環境事業</h4>
+							<h4>京都の総合建設会社 <br class="is_sp">土木工事/生コン/環境事業</h4>
 							<p>星山建設は、国土交通省、京都府、市町村発注の公共工事の施工も行う、京都府を中心とした地域貢献を総合建設会社です。地域と環境にやさしく、品質管理には厳しく。京都で土木工事・生コンのことなら星山建設へお任せください。</p>
 						</div>
 
 						<div class="img">
-							<img src="./images/top/top02_01.jpg" alt="">
+							<img src="./images/top/top02_01.jpg">
 						</div>
 					</div>
 				</div>
@@ -106,6 +117,7 @@
 					<div class="box">
 						<a href="#" class="item">
 							<div class="ttl_wrap">
+								<span class="num notoserif">01</span>
 								<h3 class="ttl">生コンクリート事業</h3>
 								<p class="en lato">freshly mixed concrete</p>
 							</div>
@@ -123,6 +135,7 @@
 
 						<a href="#" class="item">
 							<div class="ttl_wrap">
+								<span class="num notoserif">02</span>
 								<h3 class="ttl">土木工事事業</h3>
 								<p class="en lato">civil engineering</p>
 							</div>
@@ -140,6 +153,7 @@
 
 						<a href="#" class="item">
 							<div class="ttl_wrap">
+								<span class="num notoserif">03</span>
 								<h3 class="ttl">環境事業</h3>
 								<p class="en lato">environmental preservation</p>
 							</div>
@@ -168,7 +182,7 @@
 							<img src="./images/top/top04_01.jpg">
 							<div class="txt">
 								<div class="ttl_wrap">
-									<h3 class="ttl">コンクリート品質管理体制を徹底</h3>
+									<h3 class="ttl">コンクリート品質管理体制<br class="is_sp">を徹底</h3>
 									<p class="en lato">quality control system</p>
 								</div>
 								<p>生コンクリートは、製造から納入に致るまでの品質管理が需要です。星山建設では、コンクリートの品質管理体制を徹底し、万全の対応を行っております。</p>
@@ -178,12 +192,14 @@
 							</div>
 						</div>
 
-						<div class="img">
-							<img src="./images/top/top04_02.jpg">
-						</div>
-
-						<div class="img">
-							<img src="./images/top/top04_03.jpg">
+						<div class="box02">
+							<div class="img">
+								<img src="./images/top/top04_02.jpg">
+							</div>
+						
+							<div class="img">
+								<img src="./images/top/top04_03.jpg">
+							</div>
 						</div>
 					</a>
 				</div>
@@ -251,10 +267,16 @@
 				window.addEventListener('DOMContentLoaded', function () {
 					var swiper = new Swiper('.top05 .swiper-container', {
 						loop: true,
-						speed: 600,
+						speed: 800,
 						slidesPerView: 4,
 						spaceBetween: 15,
 						centeredSlides : false,
+						breakpoints: {
+							767: {
+								slidesPerView: 1.5,
+								centeredSlides : true,
+							}
+						},
 						autoplay: {
 							delay: 5000,
 							disableOnInteraction: true
@@ -263,11 +285,6 @@
 						navigation: {
 							nextEl: '.swiper-button-next',
 							prevEl: '.swiper-button-prev',
-						},
-						pagination: {
-							el: '.swiper-pagination',
-							type: 'bullets',
-							clickable: true,
 						},
 					});
 				}, false);
@@ -325,7 +342,8 @@
 
 						<div class="box_in">
 							<div class="tel_wrap">
-								<p class="tel lato">075-314-6341</p>
+								<p class="tel lato is_pc">075-314-6341</p>
+								<a href="tel:0753146341" class="tel lato is_sp">075-314-6341</a>
 								<p>受付時間 9：00～17：00（日・祝除く）</p>
 							</div>
 							<div class="contact_btn">
@@ -343,6 +361,77 @@
 
 			<div id="map" class="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13076.344810211334!2d135.7304036108122!3d34.979505450003465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600106684ca611af%3A0x6c76c513a7e04ea6!2z77yI5qCq77yJ5pif5bGx5bu66Kit!5e0!3m2!1sja!2sjp!4v1596102577768!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+
+			<div class="footer_nav">
+				<div class="container">
+					<nav>
+						<ul>
+							<li>
+								<span>生コンクリート事業</span>
+								<ul>
+									<li><a href="#">製品ラインナップ</a></li>
+									<li><a href="#">品質管理</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<span>土木工事事業</span>
+								<ul>
+									<li><a href="#">土木工事の取り組み</a></li>
+									<li><a href="#">公共実績</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<span>環境事業</span>
+								<ul>
+									<li><a href="#">環境への取り組み</a></li>
+									<li><a href="#">SPEED工法</a></li>
+									<li><a href="#">デジタルサイネージ</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<span>施工事例</span>
+								<ul>
+									<li><a href="#">土木工事</a></li>
+									<li><a href="#">SPEED工法</a></li>
+									<li><a href="#">サイネージ</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="menu01">
+							<li><a href="./"><span>トップページ</span></a></li>
+							<li><a href="#"><span>お知らせ</span></a></li>
+						</ul>
+
+						<ul class="menu01">
+							<li><a href="#"><span>会社概要</span></a></li>
+							<li><a href="#"><span>お問い合わせ</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="address">
+				<div class="container">
+					<div class="logo">
+						<img src="./images/common/footer_logo.png" alt="HOSHIYAMA TOTAL CONSTRUCTION">
+					</div>
+
+					<div class="box">
+						<p>〒601-8394 <br class="is_sp">京都府京都市南区吉祥院中河原里北町48-2</p>
+						<p class="copyright">© 2020 星山建設.</p>
+					</div>
+				</div>
 			</div>
 			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
 		</footer>

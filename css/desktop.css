@@ -55,8 +55,8 @@ section,
 @media screen and (min-width:768px) and ( max-width:1279px) {
 	.container{max-width: none;}
 } */
-.is_sp{display: none;}
-.is_tab{display: none;}
+.is_sp{display: none!important;}
+.is_tab{display: none!important;}
 @media screen and (min-width:751px) and ( max-width:1025px) {
 	.is_hidden_tab{display: none;}
 	.is_tab{display: block;}
@@ -102,7 +102,19 @@ section,
 	text-align: center;
 	margin-bottom: 2.5rem;
 }
-.ttl_wrap{ margin-bottom: 0.75rem; }
+.ttl_wrap{
+	position: relative;
+	margin-bottom: 0.75rem;
+}
+.ttl_wrap .num{
+	position: absolute;
+	content: '';
+	top: -4.9rem;
+	left: 0;
+	color: rgba(36,36,36,.1);
+	font-size: 4rem;
+	font-style: italic;
+}
 .ttl_wrap .ttl{
 	font-size: 1.8rem;
 	line-height: 1.4;
@@ -152,7 +164,9 @@ header{
 	width: 100%;
 	z-index: 55000;
 	transition: .3s;
-	background: rgba(255,255,255,.9);
+}
+header.active{
+	background: rgba(254,254,254,.9);
 }
 .header_in{
 	width: 100%;
@@ -194,7 +208,7 @@ header nav .menu li a::before{
 	transition: .3s;
 }
 header nav .menu li a:hover{
-	color: #fff;
+	color: #fefefe;
 }
 header nav .menu li a:hover::before{
 	transform: translateX(-50%) scaleX(1);
@@ -209,15 +223,14 @@ header .menu01_in{
 	display: none;
 	position: absolute;
 	top: 90.38px;
-	left: 1rem;
+	left: 0;
 	width: 300px;
-	background: #fff;
-	transition: .3s;
+	background: #fefefe;
 	padding: 1rem;
 	z-index: 3;
 }
 header .menu01_in > li a{
-	background: #fff;
+	background: #fefefe;
 	padding: 1rem!important;
 	z-index: 1;
 	display: flex;
@@ -231,11 +244,50 @@ header .h_btn{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	transition: .3s;
 }
 header .h_btn.tel{ background: #454545; }
 header .h_btn.mail{ background: #1f649e; }
+header .h_btn:hover{
+	opacity: 0.6;
+}
+header .h_btn span{
+	display: block;
+}
 header .h_btn img{
 	width: 50%;
+}
+header .tel_in{
+	display: none;
+	position: absolute;
+	top: 95px;
+	right: 70px;
+	z-index: 2;
+	background: #fefefe;
+	border-bottom: solid 5px #242424;
+	/* box-shadow: 0 0 4px 0 #ccc; */
+}
+header .h_btn.tel:hover .tel_in{
+	opacity: 1;
+}
+header .tel_in p{
+	position: relative;
+	display: inline-block;
+	font-size: 1.8rem;
+	line-height: 1;
+	white-space: nowrap;
+	padding: 1rem 1.5rem;
+	z-index: 2;
+}
+header .tel_in p::before{
+	position: absolute;
+	content: '';
+	top: -30px;
+	right: 45px;
+	margin-left: -15px;
+	border: 15px solid transparent;
+	border-bottom: 15px solid #fefefe;
+	z-index: 2;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -301,11 +353,56 @@ footer .map iframe{
 footer .map iframe,
 footer .map object,
 footer .map embed{
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+footer .footer_nav{
+	color: #fefefe;
+	background: #454545;
+	padding: 4rem 0 5rem;
+}
+footer nav{
+	display: flex;
+	justify-content: space-between;
+}
+footer nav li a{
+	font-size: 0.9rem;
+	line-height: 2;
+	color: #fefefe;
+	padding-left: 1.75rem;
+	transition: .3s;
+}
+footer nav li a:hover{
+	opacity: 0.6;
+}
+footer nav li span{
+	display: block;
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+footer nav li span::before{
+	content: '−';
+	margin-right: 0.5rem;
+}
+footer .address{
+	background: #fefefe;
+	padding: 3rem 0 2rem;
+}
+footer .address .logo{
+	width: 300px;
+	margin-bottom: 1.5rem;
+}
+footer .address .box{
+	display: flex;
+	justify-content: space-between;
+}
+footer .address .box p{
+	font-size: 0.9rem;
+	letter-spacing: 1px;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -332,6 +429,15 @@ footer .map embed{
 .top02{
 	padding: 6rem 0 3rem;
 }
+.top02::before{
+	position: absolute;
+	content: '';
+	background: url(../images/top/top02_bg.png) top left / contain no-repeat;
+	top: -5rem;
+	left: 0;
+	width: 25rem;
+	height: 25rem;
+}
 .top02 .box{
 	display: flex;
 	justify-content: space-between;
@@ -357,9 +463,7 @@ footer .map embed{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top03{ padding: 3rem 0 6rem; }
-.top03 .box{
-	display: flex;
-}
+.top03 .box{ display: flex; }
 .top03 .item{
 	display: flex;
 	flex-direction: column;
@@ -413,7 +517,8 @@ footer .map embed{
 	padding: 6rem 0;
 	background: url(../images/top/top04_bg.jpg) center center / 1920px auto no-repeat;
 }
-.top04 .box{
+.top04 .box,
+.top04 .box02{
 	position: relative;
 	display: flex;
 	align-items: flex-start;
@@ -424,11 +529,15 @@ footer .map embed{
 .top04 .box .img:first-of-type{
 	width: 46%;
 }
-.top04 .box .img:nth-of-type(2){
-	width: 26%;
+.top04 .box02{
+	width: 52%;
 }
-.top04 .box .img:last-of-type{
-	width: 24%;
+.top04 .box02 .img:nth-of-type(1){
+	width: 50%;
+	margin-right: 4%;
+}
+.top04 .box .img:nth-of-type(2){
+	width: 46%;
 	margin-right: 0;
 }
 .top04 .box .txt{
@@ -451,12 +560,6 @@ footer .map embed{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top05{ padding: 6rem 0 4rem; }
-.top05 .box{
-	display: flex;
-}
-.top05 .item{
-	width: 25%;
-}
 .top05 .item .img{
 	position: relative;
 	width: 100%;
