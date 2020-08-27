@@ -668,113 +668,99 @@ footer .address .box p{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower02{
-	padding: 4rem 0;
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.box01{
+	margin-top: 4rem;
 }
-.lower02 .box p + p{
+.box01 p + p{
 	margin-top: 1.5rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower03{
-	padding: 4rem 0;
+.box02{
+	margin: 8rem 0;
 }
-.lower03 .item{
+.box02 .item{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 4rem;
 }
-.lower03 .item:first-of-type{
+.box02 .item:first-of-type{
 	margin-top: 0;
 }
-.lower03 .item .img{
+.box02 .item .img{
 	width: 45%;
 }
-.lower03 .item:nth-of-type(even) .img{
+.box02 .item:nth-of-type(even) .img{
 	order: 2;
 }
-.lower03 .item img{
+.box02 .item img{
 	width: 100%;
 	height: auto;
 }
-.lower03 .item .txt{
+.box02 .item .txt{
 	width: 50%;
 }
-.lower03 .item:nth-of-type(even) .txt{
+.box02 .item:nth-of-type(even) .txt{
 	order: 1;
 }
-.lower03 .box p + p{
+.box02 .box p + p{
 	margin-top: 1.5rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower04{
-	padding: 4rem 0;
-}
-.lower04 .box{
+.box03{
+	margin: 8rem 0;
 	display: flex;
 }
-.lower04 .item{
+.box03 .item{
 	width: 31%;
 	margin-right: 3.5%;
 }
-.lower04 .item:nth-of-type(3n){
+.box03 .item:nth-of-type(3n){
 	margin-right: 0;
 }
-.lower04 .item .img{
+.box03 .item .img{
 	margin-bottom: 1rem;
 }
-.lower04 .item img{
+.box03 .item img{
 	width: 100%;
 	height: auto;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower05{
-	padding: 4rem 0;
+.box04{
+	margin: 8rem 0;
 }
-.lower05 .item{
+.box04 .item{
 	display: flex;
 	justify-content: space-between;
 }
-.lower05 .item .img{
+.box04 .item .img{
 	width: 47.5%;
 }
-.lower05 .item img{
+.box04 .item img{
 	width: 100%;
 	height: auto;
 }
-.lower05 .item .txt{
+.box04 .item .txt{
 	width: 47.5%;
 }
-.lower05 .box p + p{
+.box04 .box p + p{
 	margin-top: 1.5rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower06{
-	padding: 4rem 0;
+.box05{
+	margin: 8rem 0;
 }
-.lower06 .box table{
+.box05 table{
 	border-collapse: collapse;
 	width: 100%;
 }
-.lower06 .box th{
+.box05 th{
 	width: 20%;
 	text-align: left;
 	border-top: 2px solid #ddd;
 	padding: 30px 0;
 }
-.lower06 .box td{
+.box05 td{
 	border-top: 2px solid #F3F8FB;
 	padding: 30px 20px;
 }
-.lower06 .box td p + p{
+.box05 td p + p{
 	margin-top: 1rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */

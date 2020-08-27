@@ -524,101 +524,90 @@ footer nav .menu01 li a{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower02{
-	padding: 2.5rem 0;
-}
-.lower02 .box p + p{
-	margin-top: 1.5rem;
-}
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower03{
-	padding: 2.5rem 0;
-}
-.lower03 .item{
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.box01{
 	margin-top: 2.5rem;
 }
-.lower03 .item:first-of-type{
+.box01 p + p{
+	margin-top: 1.5rem;
+}
+.box02{
+	margin: 5rem 0;
+}
+.box02 .item{
+	margin-top: 2.5rem;
+}
+.box02 .item:first-of-type{
 	margin-top: 0;
 }
-.lower03 .item .img{
+.box02 .item .img{
 	margin-bottom: 1rem;
 }
-.lower03 .item img{
+.box02 .item img{
 	width: 100%;
 	height: auto;
 }
-.lower03 .box p + p{
+.box02 .box p + p{
 	margin-top: 1.5rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower04{
-	padding: 2.5rem 0;
-}
-.lower04 .box{
+.box03{
+	margin: 5rem 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.lower04 .item{
+.box03 .item{
 	width: 48%;
 	margin-top: 2.5rem;
 }
-.lower04 .item:nth-of-type(-n+2){
+.box03 .item:nth-of-type(-n+2){
 	margin-top: 0;
 }
-.lower04 .item .img{
+.box03 .item:nth-of-type(3){
+	margin: 2.5rem auto 0;
+}
+.box03 .item .img{
 	margin-bottom: 0.5rem;
 }
-.lower04 .item img{
+.box03 .item img{
 	width: 100%;
 	height: auto;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower05{
-	padding: 2.5rem 0;
+.box04{
+	margin: 5rem 0;
 }
-.lower05 .item .img{
+.box04 .item .img{
 	margin-bottom: 1rem;
 }
-.lower05 .item img{
+.box04 .item img{
 	width: 100%;
 	height: auto;
 }
-.lower05 .box p + p{
+.box04 .box p + p{
 	margin-top: 1.5rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower06{
-	padding: 2.5rem 0;
+.box05{
+	margin: 5rem 0 2.5rem;
 }
-.lower06 .box table{
+.box05 table{
 	border-collapse: collapse;
 	width: 100%;
 }
-.lower06 .box th{
+.box05 th{
 	width: 100%;
 	display: block;
 	text-align: left;
 	border-top: 2px solid #F3F8FB;
 	padding: 30px 0 10px 0;
 }
-.lower06 .box td{
+.box05 td{
 	display: block;
 	padding: 0 0 30px 0px;
 }
-.lower06 .box td p + p{
+.box05 td p + p{
 	margin-top: 1rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 @media screen and (orientation:portrait) {/* 縦向き */}
 @media screen and (orientation:landscape) {/* 横向き */}
