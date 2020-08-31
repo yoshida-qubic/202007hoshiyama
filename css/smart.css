@@ -524,87 +524,87 @@ footer nav .menu01 li a{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.box01{
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.lower .box01{
 	margin-top: 2.5rem;
 }
-.box01 p + p{
+.lower .box01 p + p{
 	margin-top: 1.5rem;
 }
-.box02{
+.lower .box02{
 	margin: 5rem 0;
 }
-.box02 .item{
+.lower .box02 .item{
 	margin-top: 2.5rem;
 }
-.box02 .item:first-of-type{
+.lower .box02 .item:first-of-type{
 	margin-top: 0;
 }
-.box02 .item .img{
+.lower .box02 .item .img{
 	margin-bottom: 1rem;
 }
-.box02 .item img{
+.lower .box02 .item img{
 	width: 100%;
 	height: auto;
 }
-.box02 .box p + p{
+.lower .box02 .box p + p{
 	margin-top: 1.5rem;
 }
-.box03{
+.lower .box03{
 	margin: 5rem 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.box03 .item{
+.lower .box03 .item{
 	width: 48%;
 	margin-top: 2.5rem;
 }
-.box03 .item:nth-of-type(-n+2){
+.lower .box03 .item:nth-of-type(-n+2){
 	margin-top: 0;
 }
-.box03 .item:nth-of-type(3){
+.lower .box03 .item:nth-of-type(3){
 	margin: 2.5rem auto 0;
 }
-.box03 .item .img{
+.lower .box03 .item .img{
 	margin-bottom: 0.5rem;
 }
-.box03 .item img{
+.lower .box03 .item img{
 	width: 100%;
 	height: auto;
 }
-.box04{
+.lower .box04{
 	margin: 5rem 0;
 }
-.box04 .item .img{
+.lower .box04 .item .img{
 	margin-bottom: 1rem;
 }
-.box04 .item img{
+.lower .box04 .item img{
 	width: 100%;
 	height: auto;
 }
-.box04 .box p + p{
+.lower .box04 .box p + p{
 	margin-top: 1.5rem;
 }
-.box05{
+.lower .box05{
 	margin: 5rem 0 2.5rem;
 }
-.box05 table{
+.lower .box05 table{
 	border-collapse: collapse;
 	width: 100%;
 }
-.box05 th{
+.lower .box05 th{
 	width: 100%;
 	display: block;
 	text-align: left;
 	border-top: 2px solid #F3F8FB;
 	padding: 30px 0 10px 0;
 }
-.box05 td{
+.lower .box05 td{
 	display: block;
 	padding: 0 0 30px 0px;
 }
-.box05 td p + p{
+.lower .box05 td p + p{
 	margin-top: 1rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */

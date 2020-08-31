@@ -668,99 +668,99 @@ footer .address .box p{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.box01{
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lower ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.lower .box01{
 	margin-top: 4rem;
 }
-.box01 p + p{
+.lower .box01 p + p{
 	margin-top: 1.5rem;
 }
-.box02{
+.lower .box02{
 	margin: 8rem 0;
 }
-.box02 .item{
+.lower .box02 .item{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 4rem;
 }
-.box02 .item:first-of-type{
+.lower .box02 .item:first-of-type{
 	margin-top: 0;
 }
-.box02 .item .img{
+.lower .box02 .item .img{
 	width: 45%;
 }
-.box02 .item:nth-of-type(even) .img{
+.lower .box02 .item:nth-of-type(even) .img{
 	order: 2;
 }
-.box02 .item img{
+.lower .box02 .item img{
 	width: 100%;
 	height: auto;
 }
-.box02 .item .txt{
+.lower .box02 .item .txt{
 	width: 50%;
 }
-.box02 .item:nth-of-type(even) .txt{
+.lower .box02 .item:nth-of-type(even) .txt{
 	order: 1;
 }
-.box02 .box p + p{
+.lower .box02 .box p + p{
 	margin-top: 1.5rem;
 }
-.box03{
+.lower .box03{
 	margin: 8rem 0;
 	display: flex;
 }
-.box03 .item{
+.lower .box03 .item{
 	width: 31%;
 	margin-right: 3.5%;
 }
-.box03 .item:nth-of-type(3n){
+.lower .box03 .item:nth-of-type(3n){
 	margin-right: 0;
 }
-.box03 .item .img{
+.lower .box03 .item .img{
 	margin-bottom: 1rem;
 }
-.box03 .item img{
+.lower .box03 .item img{
 	width: 100%;
 	height: auto;
 }
-.box04{
+.lower .box04{
 	margin: 8rem 0;
 }
-.box04 .item{
+.lower .box04 .item{
 	display: flex;
 	justify-content: space-between;
 }
-.box04 .item .img{
+.lower .box04 .item .img{
 	width: 47.5%;
 }
-.box04 .item img{
+.lower .box04 .item img{
 	width: 100%;
 	height: auto;
 }
-.box04 .item .txt{
+.lower .box04 .item .txt{
 	width: 47.5%;
 }
-.box04 .box p + p{
+.lower .box04 .box p + p{
 	margin-top: 1.5rem;
 }
-.box05{
+.lower .box05{
 	margin: 8rem 0;
 }
-.box05 table{
+.lower .box05 table{
 	border-collapse: collapse;
 	width: 100%;
 }
-.box05 th{
+.lower .box05 th{
 	width: 20%;
 	text-align: left;
 	border-top: 2px solid #ddd;
 	padding: 30px 0;
 }
-.box05 td{
+.lower .box05 td{
 	border-top: 2px solid #F3F8FB;
 	padding: 30px 20px;
 }
-.box05 td p + p{
+.lower .box05 td p + p{
 	margin-top: 1rem;
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lower ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
